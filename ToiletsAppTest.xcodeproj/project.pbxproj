@@ -15,6 +15,22 @@
 		5006A59E2B9B6250007501B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A59C2B9B6250007501B3 /* LaunchScreen.storyboard */; };
 		5006A5A92B9B6251007501B3 /* ToiletsAppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5A82B9B6251007501B3 /* ToiletsAppTestTests.swift */; };
 		5006A5B42B9B6251007501B3 /* ToiletsAppTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5B32B9B6251007501B3 /* ToiletsAppTestUITests.swift */; };
+		5006A5CE2B9B6676007501B3 /* ToiletsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5C82B9B6676007501B3 /* ToiletsListPresenter.swift */; };
+		5006A5CF2B9B6676007501B3 /* ToiletsListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5C92B9B6676007501B3 /* ToiletsListWorker.swift */; };
+		5006A5D02B9B6676007501B3 /* ToiletsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5CA2B9B6676007501B3 /* ToiletsListRouter.swift */; };
+		5006A5D12B9B6676007501B3 /* ToiletsListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5CB2B9B6676007501B3 /* ToiletsListModels.swift */; };
+		5006A5D22B9B6676007501B3 /* ToiletsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5CC2B9B6676007501B3 /* ToiletsListViewController.swift */; };
+		5006A5D32B9B6676007501B3 /* ToiletsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5CD2B9B6676007501B3 /* ToiletsListInteractor.swift */; };
+		5006A5DB2B9B6689007501B3 /* ToiletsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A5DA2B9B6689007501B3 /* ToiletsList.storyboard */; };
+		5006A5E22B9B6A38007501B3 /* ToiletDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5E02B9B6A38007501B3 /* ToiletDetailsTableViewCell.swift */; };
+		5006A5E32B9B6A38007501B3 /* ToiletDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5006A5E12B9B6A38007501B3 /* ToiletDetailsTableViewCell.xib */; };
+		5006A5EC2B9B6F8E007501B3 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5EB2B9B6F8E007501B3 /* URLs.swift */; };
+		5006A5F62B9B72DC007501B3 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5F02B9B72DB007501B3 /* Geometry.swift */; };
+		5006A5F72B9B72DC007501B3 /* ToiletsListCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5F12B9B72DB007501B3 /* ToiletsListCodable.swift */; };
+		5006A5F82B9B72DC007501B3 /* Geo_shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5F22B9B72DB007501B3 /* Geo_shape.swift */; };
+		5006A5F92B9B72DC007501B3 /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5F32B9B72DB007501B3 /* Fields.swift */; };
+		5006A5FA2B9B72DC007501B3 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5F42B9B72DB007501B3 /* Parameters.swift */; };
+		5006A5FB2B9B72DC007501B3 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5F52B9B72DC007501B3 /* Records.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +65,22 @@
 		5006A5AF2B9B6251007501B3 /* ToiletsAppTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToiletsAppTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5006A5B32B9B6251007501B3 /* ToiletsAppTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsAppTestUITests.swift; sourceTree = "<group>"; };
 		5006A5B52B9B6251007501B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5006A5C82B9B6676007501B3 /* ToiletsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListPresenter.swift; sourceTree = "<group>"; };
+		5006A5C92B9B6676007501B3 /* ToiletsListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListWorker.swift; sourceTree = "<group>"; };
+		5006A5CA2B9B6676007501B3 /* ToiletsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListRouter.swift; sourceTree = "<group>"; };
+		5006A5CB2B9B6676007501B3 /* ToiletsListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListModels.swift; sourceTree = "<group>"; };
+		5006A5CC2B9B6676007501B3 /* ToiletsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListViewController.swift; sourceTree = "<group>"; };
+		5006A5CD2B9B6676007501B3 /* ToiletsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListInteractor.swift; sourceTree = "<group>"; };
+		5006A5DA2B9B6689007501B3 /* ToiletsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToiletsList.storyboard; sourceTree = "<group>"; };
+		5006A5E02B9B6A38007501B3 /* ToiletDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		5006A5E12B9B6A38007501B3 /* ToiletDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToiletDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		5006A5EB2B9B6F8E007501B3 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		5006A5F02B9B72DB007501B3 /* Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometry.swift; sourceTree = "<group>"; };
+		5006A5F12B9B72DB007501B3 /* ToiletsListCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletsListCodable.swift; sourceTree = "<group>"; };
+		5006A5F22B9B72DB007501B3 /* Geo_shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geo_shape.swift; sourceTree = "<group>"; };
+		5006A5F32B9B72DB007501B3 /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		5006A5F42B9B72DB007501B3 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		5006A5F52B9B72DC007501B3 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +131,9 @@
 		5006A5902B9B6243007501B3 /* ToiletsAppTest */ = {
 			isa = PBXGroup;
 			children = (
+				5006A5EA2B9B6F8E007501B3 /* Utils */,
+				5006A5E82B9B6B94007501B3 /* Models */,
+				5006A5C72B9B6649007501B3 /* ToiletsList */,
 				5006A5912B9B6243007501B3 /* AppDelegate.swift */,
 				5006A5932B9B6243007501B3 /* SceneDelegate.swift */,
 				5006A5952B9B6244007501B3 /* ViewController.swift */,
@@ -126,6 +161,59 @@
 				5006A5B52B9B6251007501B3 /* Info.plist */,
 			);
 			path = ToiletsAppTestUITests;
+			sourceTree = "<group>";
+		};
+		5006A5C72B9B6649007501B3 /* ToiletsList */ = {
+			isa = PBXGroup;
+			children = (
+				5006A5DF2B9B6A1E007501B3 /* Cells */,
+				5006A5C82B9B6676007501B3 /* ToiletsListPresenter.swift */,
+				5006A5C92B9B6676007501B3 /* ToiletsListWorker.swift */,
+				5006A5CA2B9B6676007501B3 /* ToiletsListRouter.swift */,
+				5006A5CB2B9B6676007501B3 /* ToiletsListModels.swift */,
+				5006A5CC2B9B6676007501B3 /* ToiletsListViewController.swift */,
+				5006A5CD2B9B6676007501B3 /* ToiletsListInteractor.swift */,
+				5006A5DA2B9B6689007501B3 /* ToiletsList.storyboard */,
+			);
+			path = ToiletsList;
+			sourceTree = "<group>";
+		};
+		5006A5DF2B9B6A1E007501B3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5006A5E02B9B6A38007501B3 /* ToiletDetailsTableViewCell.swift */,
+				5006A5E12B9B6A38007501B3 /* ToiletDetailsTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5006A5E82B9B6B94007501B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5006A5E92B9B6DBE007501B3 /* Codable */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5006A5E92B9B6DBE007501B3 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				5006A5F32B9B72DB007501B3 /* Fields.swift */,
+				5006A5F22B9B72DB007501B3 /* Geo_shape.swift */,
+				5006A5F02B9B72DB007501B3 /* Geometry.swift */,
+				5006A5F12B9B72DB007501B3 /* ToiletsListCodable.swift */,
+				5006A5F42B9B72DB007501B3 /* Parameters.swift */,
+				5006A5F52B9B72DC007501B3 /* Records.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
+		5006A5EA2B9B6F8E007501B3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5006A5EB2B9B6F8E007501B3 /* URLs.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +320,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5006A59E2B9B6250007501B3 /* LaunchScreen.storyboard in Resources */,
+				5006A5DB2B9B6689007501B3 /* ToiletsList.storyboard in Resources */,
 				5006A59B2B9B6250007501B3 /* Assets.xcassets in Resources */,
 				5006A5992B9B6244007501B3 /* Main.storyboard in Resources */,
+				5006A5E32B9B6A38007501B3 /* ToiletDetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +348,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5006A5F92B9B72DC007501B3 /* Fields.swift in Sources */,
 				5006A5962B9B6244007501B3 /* ViewController.swift in Sources */,
+				5006A5F62B9B72DC007501B3 /* Geometry.swift in Sources */,
+				5006A5D22B9B6676007501B3 /* ToiletsListViewController.swift in Sources */,
+				5006A5FB2B9B72DC007501B3 /* Records.swift in Sources */,
+				5006A5E22B9B6A38007501B3 /* ToiletDetailsTableViewCell.swift in Sources */,
+				5006A5EC2B9B6F8E007501B3 /* URLs.swift in Sources */,
+				5006A5D12B9B6676007501B3 /* ToiletsListModels.swift in Sources */,
+				5006A5CF2B9B6676007501B3 /* ToiletsListWorker.swift in Sources */,
+				5006A5F72B9B72DC007501B3 /* ToiletsListCodable.swift in Sources */,
+				5006A5CE2B9B6676007501B3 /* ToiletsListPresenter.swift in Sources */,
+				5006A5F82B9B72DC007501B3 /* Geo_shape.swift in Sources */,
+				5006A5D02B9B6676007501B3 /* ToiletsListRouter.swift in Sources */,
 				5006A5922B9B6243007501B3 /* AppDelegate.swift in Sources */,
+				5006A5D32B9B6676007501B3 /* ToiletsListInteractor.swift in Sources */,
 				5006A5942B9B6243007501B3 /* SceneDelegate.swift in Sources */,
+				5006A5FA2B9B72DC007501B3 /* Parameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

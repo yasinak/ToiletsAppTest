@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cv0-nV-ARc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jI8-rH-5ZP">
+            <objects>
+                <navigationController id="Cv0-nV-ARc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rnf-DN-GtN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Stf-qm-EnJ" kind="relationship" relationship="rootViewController" id="BY4-Kx-Ucb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rI-oR-l2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1209" y="-64"/>
+        </scene>
+        <!--Liste des toilettes-->
+        <scene sceneID="qf3-Xi-TFa">
+            <objects>
+                <viewController id="Stf-qm-EnJ" customClass="ToiletsListViewController" customModule="ToiletsAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iy7-XW-Uqc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dzr-ep-yAh">
+                                <rect key="frame" x="0.0" y="149" width="414" height="713"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Stf-qm-EnJ" id="im9-FJ-FZT"/>
+                                    <outlet property="delegate" destination="Stf-qm-EnJ" id="OlX-kK-FUx"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulter uniquement ceux adaptées aux personnes à mobilités réduite :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvP-kF-vqd">
+                                <rect key="frame" x="8" y="104" width="325" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Zb-wM-byL">
+                                <rect key="frame" x="349" y="103" width="51" height="31"/>
+                                <connections>
+                                    <action selector="PRMDidChange:" destination="Stf-qm-EnJ" eventType="valueChanged" id="8Bj-Ls-sME"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GX0-ej-K27"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GX0-ej-K27" firstAttribute="trailing" secondItem="6Zb-wM-byL" secondAttribute="trailing" constant="16" id="4qn-pS-E6T"/>
+                            <constraint firstItem="nvP-kF-vqd" firstAttribute="top" secondItem="GX0-ej-K27" secondAttribute="top" constant="16" id="8Sk-WW-pK4"/>
+                            <constraint firstItem="Dzr-ep-yAh" firstAttribute="leading" secondItem="GX0-ej-K27" secondAttribute="leading" id="JPF-Ys-kFg"/>
+                            <constraint firstItem="Dzr-ep-yAh" firstAttribute="top" secondItem="nvP-kF-vqd" secondAttribute="bottom" constant="16" id="MOB-r0-uXY"/>
+                            <constraint firstItem="GX0-ej-K27" firstAttribute="bottom" secondItem="Dzr-ep-yAh" secondAttribute="bottom" id="esM-Pv-mza"/>
+                            <constraint firstItem="6Zb-wM-byL" firstAttribute="leading" secondItem="nvP-kF-vqd" secondAttribute="trailing" constant="16" id="j9d-c4-ZEV"/>
+                            <constraint firstItem="6Zb-wM-byL" firstAttribute="centerY" secondItem="nvP-kF-vqd" secondAttribute="centerY" id="kyM-dk-nV5"/>
+                            <constraint firstItem="GX0-ej-K27" firstAttribute="trailing" secondItem="Dzr-ep-yAh" secondAttribute="trailing" id="tFH-cH-yhH"/>
+                            <constraint firstItem="nvP-kF-vqd" firstAttribute="leading" secondItem="GX0-ej-K27" secondAttribute="leading" constant="8" id="uws-WD-e78"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Liste des toilettes" id="LUP-sT-rq1"/>
+                    <connections>
+                        <outlet property="toiletsListTableView" destination="Dzr-ep-yAh" id="u3K-js-yoe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FrG-Fh-V40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339.13043478260875" y="-64.285714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
