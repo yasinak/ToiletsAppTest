@@ -32,6 +32,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH3-SA-Um4" userLabel="PMR Header View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulter uniquement ceux adaptées aux personnes à mobilités réduite :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvP-kF-vqd">
+                                        <rect key="frame" x="16" y="16" width="317" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Zb-wM-byL">
+                                        <rect key="frame" x="349" y="15" width="51" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="6Kg-HM-9Nh"/>
+                                            <constraint firstAttribute="height" constant="31" id="IY4-Rm-HCd"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="PRMDidChange:" destination="Stf-qm-EnJ" eventType="valueChanged" id="8Bj-Ls-sME"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="6Zb-wM-byL" firstAttribute="centerY" secondItem="nvP-kF-vqd" secondAttribute="centerY" id="3Qb-IE-Acp"/>
+                                    <constraint firstItem="nvP-kF-vqd" firstAttribute="top" secondItem="YH3-SA-Um4" secondAttribute="top" constant="16" id="9tk-v9-YGO"/>
+                                    <constraint firstAttribute="bottom" secondItem="nvP-kF-vqd" secondAttribute="bottom" constant="16" id="MiB-Zh-a79"/>
+                                    <constraint firstItem="6Zb-wM-byL" firstAttribute="leading" secondItem="nvP-kF-vqd" secondAttribute="trailing" constant="16" id="SM5-M9-qGR"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Zb-wM-byL" secondAttribute="trailing" constant="16" id="Ywe-qQ-KI2"/>
+                                    <constraint firstItem="nvP-kF-vqd" firstAttribute="leading" secondItem="YH3-SA-Um4" secondAttribute="leading" constant="16" id="ZMb-4N-rGc"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dzr-ep-yAh">
                                 <rect key="frame" x="0.0" y="149" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,31 +70,17 @@
                                     <outlet property="delegate" destination="Stf-qm-EnJ" id="OlX-kK-FUx"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulter uniquement ceux adaptées aux personnes à mobilités réduite :" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvP-kF-vqd">
-                                <rect key="frame" x="8" y="104" width="325" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6Zb-wM-byL">
-                                <rect key="frame" x="349" y="103" width="51" height="31"/>
-                                <connections>
-                                    <action selector="PRMDidChange:" destination="Stf-qm-EnJ" eventType="valueChanged" id="8Bj-Ls-sME"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GX0-ej-K27"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="GX0-ej-K27" firstAttribute="trailing" secondItem="6Zb-wM-byL" secondAttribute="trailing" constant="16" id="4qn-pS-E6T"/>
-                            <constraint firstItem="nvP-kF-vqd" firstAttribute="top" secondItem="GX0-ej-K27" secondAttribute="top" constant="16" id="8Sk-WW-pK4"/>
+                            <constraint firstItem="YH3-SA-Um4" firstAttribute="top" secondItem="GX0-ej-K27" secondAttribute="top" id="3SE-Cd-x3R"/>
+                            <constraint firstItem="YH3-SA-Um4" firstAttribute="leading" secondItem="GX0-ej-K27" secondAttribute="leading" id="6Kh-MV-9Fd"/>
                             <constraint firstItem="Dzr-ep-yAh" firstAttribute="leading" secondItem="GX0-ej-K27" secondAttribute="leading" id="JPF-Ys-kFg"/>
-                            <constraint firstItem="Dzr-ep-yAh" firstAttribute="top" secondItem="nvP-kF-vqd" secondAttribute="bottom" constant="16" id="MOB-r0-uXY"/>
+                            <constraint firstItem="GX0-ej-K27" firstAttribute="trailing" secondItem="YH3-SA-Um4" secondAttribute="trailing" id="UPx-6m-63g"/>
+                            <constraint firstItem="Dzr-ep-yAh" firstAttribute="top" secondItem="YH3-SA-Um4" secondAttribute="bottom" id="Zsc-VG-FmX"/>
                             <constraint firstItem="GX0-ej-K27" firstAttribute="bottom" secondItem="Dzr-ep-yAh" secondAttribute="bottom" id="esM-Pv-mza"/>
-                            <constraint firstItem="6Zb-wM-byL" firstAttribute="leading" secondItem="nvP-kF-vqd" secondAttribute="trailing" constant="16" id="j9d-c4-ZEV"/>
-                            <constraint firstItem="6Zb-wM-byL" firstAttribute="centerY" secondItem="nvP-kF-vqd" secondAttribute="centerY" id="kyM-dk-nV5"/>
                             <constraint firstItem="GX0-ej-K27" firstAttribute="trailing" secondItem="Dzr-ep-yAh" secondAttribute="trailing" id="tFH-cH-yhH"/>
-                            <constraint firstItem="nvP-kF-vqd" firstAttribute="leading" secondItem="GX0-ej-K27" secondAttribute="leading" constant="8" id="uws-WD-e78"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Liste des toilettes" id="LUP-sT-rq1"/>

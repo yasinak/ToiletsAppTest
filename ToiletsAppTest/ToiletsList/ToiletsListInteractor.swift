@@ -25,13 +25,13 @@ class ToiletsListInteractor: ToiletsListBusinessLogic, ToiletsListDataStore {
     // MARK: Do something
 
     func fetchToiletsList(request: ToiletsList.Request) {
-        worker.fetchToiletsList { [weak self] result in
+        worker.fetchToiletsList(startIndex: request.index) { [weak self] result in
             switch result {
             case .success(let toiletsListCodable):
                 let toiletDetails = toiletsListCodable.records?.compactMap{ records in
-                    ToiletsList.ToiletDetails(address: records.fields?.adresse,
+                    ToiletsList.ToiletDetailsResponse(address: records.fields?.adresse,
                                          district: records.fields?.arrondissement,
-                                         onlyPRM: records.fields?.acces_pmr,
+                                         onlyPMR: records.fields?.acces_pmr,
                                          openingHour: records.fields?.horaire,
                                          latitude: records.fields?.geo_point_2d?[0],
                                          longitude: records.fields?.geo_point_2d?[1])

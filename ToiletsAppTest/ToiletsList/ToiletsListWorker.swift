@@ -12,9 +12,9 @@ class ToiletsListWorker {
     
     //MARK: - Fetch Toilets List
     
-    func fetchToiletsList(completion: @escaping(_ result: Result<ToiletsListCodable, Error>) -> Void) {
+    func fetchToiletsList(startIndex: Int, completion: @escaping(_ result: Result<ToiletsListCodable, Error>) -> Void) {
         //  manage URL error
-        guard let url = URL(string: URLs.toiletsListUrl) else {
+        guard let url = URL(string: URLs.toiletsListUrl(startIndex: startIndex)) else {
             return completion(.failure(NSError(domain: "", code: 400, userInfo: [NSLocalizedDescriptionKey: "Bad URL"])))
         }
         //  launch the request

@@ -13,21 +13,22 @@ enum ToiletsList
     // MARK: Use cases
     
     struct Request {
-        let onlyPRM: Bool
+        let onlyPMR: Bool
         let userLatitude: Double
         let userLongitude: Double
+        let index: Int
     }
     
     struct Response {
-        let toiletDetails: [ToiletDetails]
+        let toiletDetails: [ToiletDetailsResponse]
         let userLatitude: Double
         let userLongitude: Double
     }
     
-    struct ToiletDetails {
+    struct ToiletDetailsResponse {
         let address: String?
         let district: Int?
-        let onlyPRM: String?
+        let onlyPMR: String?
         let openingHour: String?
         let latitude: Double?
         let longitude: Double?
@@ -36,7 +37,7 @@ enum ToiletsList
     struct ViewModel {
         let fullAddress: String
         let openingHour: String
-        let isPRM: String
+        let isPMR: String
         let distance: String
     }
     
