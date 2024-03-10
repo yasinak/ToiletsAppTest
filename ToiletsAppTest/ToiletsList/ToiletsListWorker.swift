@@ -21,7 +21,7 @@ class ToiletsListWorker {
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let data = data {
                 do {
-                    let toiletsList = try JSONDecoder().decode(ToiletsListCodable.self, from: data!)
+                    let toiletsList = try JSONDecoder().decode(ToiletsListCodable.self, from: data)
                     completion(.success(toiletsList))
                 } catch {
                     completion(.failure(error))

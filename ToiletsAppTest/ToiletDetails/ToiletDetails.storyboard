@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bAJ-dj-Wwl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Toilet Details View Controller-->
+        <scene sceneID="c9y-r6-ndS">
+            <objects>
+                <viewController storyboardIdentifier="ToiletDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bAJ-dj-Wwl" customClass="ToiletDetailsViewController" customModule="ToiletsAppTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4v7-k2-JfH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwh-bZ-Ujg" userLabel="Address Label">
+                                <rect key="frame" x="16" y="133.5" width="382" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horaire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkC-kZ-4DV" userLabel="Hour Label">
+                                <rect key="frame" x="16" y="156" width="382" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PMR" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mm-zM-kit" userLabel="PMR Label">
+                                <rect key="frame" x="16" y="178.5" width="382" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAa-dd-6Ct" userLabel="Distance Label">
+                                <rect key="frame" x="16" y="201" width="382" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voici le détails de votre sélection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pk8-ua-wI5">
+                                <rect key="frame" x="47.5" y="76" width="319.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dw6-kF-BJP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dw6-kF-BJP" firstAttribute="trailing" secondItem="8mm-zM-kit" secondAttribute="trailing" constant="16" id="3U1-aC-3dD"/>
+                            <constraint firstItem="WAa-dd-6Ct" firstAttribute="top" secondItem="8mm-zM-kit" secondAttribute="bottom" constant="8" id="9Ix-uV-3dr"/>
+                            <constraint firstItem="Dw6-kF-BJP" firstAttribute="trailing" secondItem="WAa-dd-6Ct" secondAttribute="trailing" constant="16" id="BBi-VV-orZ"/>
+                            <constraint firstItem="Pk8-ua-wI5" firstAttribute="top" secondItem="Dw6-kF-BJP" secondAttribute="top" constant="32" id="IxS-Nx-h22"/>
+                            <constraint firstItem="Dw6-kF-BJP" firstAttribute="trailing" secondItem="Uwh-bZ-Ujg" secondAttribute="trailing" constant="16" id="J3I-gk-k4z"/>
+                            <constraint firstItem="Pk8-ua-wI5" firstAttribute="centerX" secondItem="4v7-k2-JfH" secondAttribute="centerX" id="anH-SI-4mK"/>
+                            <constraint firstItem="Dw6-kF-BJP" firstAttribute="trailing" secondItem="xkC-kZ-4DV" secondAttribute="trailing" constant="16" id="cV1-tH-0S1"/>
+                            <constraint firstItem="WAa-dd-6Ct" firstAttribute="leading" secondItem="Uwh-bZ-Ujg" secondAttribute="leading" id="cW2-an-B0I"/>
+                            <constraint firstItem="8mm-zM-kit" firstAttribute="top" secondItem="xkC-kZ-4DV" secondAttribute="bottom" constant="8" id="eRE-pW-p2d"/>
+                            <constraint firstItem="xkC-kZ-4DV" firstAttribute="top" secondItem="Uwh-bZ-Ujg" secondAttribute="bottom" constant="8" id="ec7-i5-WTG"/>
+                            <constraint firstItem="Uwh-bZ-Ujg" firstAttribute="leading" secondItem="Dw6-kF-BJP" secondAttribute="leading" constant="16" id="hlf-L5-A3a"/>
+                            <constraint firstItem="xkC-kZ-4DV" firstAttribute="leading" secondItem="Uwh-bZ-Ujg" secondAttribute="leading" id="o0l-ZD-EcW"/>
+                            <constraint firstItem="Uwh-bZ-Ujg" firstAttribute="top" secondItem="Pk8-ua-wI5" secondAttribute="bottom" constant="32" id="uva-R2-Ns5"/>
+                            <constraint firstItem="8mm-zM-kit" firstAttribute="leading" secondItem="Uwh-bZ-Ujg" secondAttribute="leading" id="yTy-WT-BQF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="distanceLabel" destination="WAa-dd-6Ct" id="zo6-JC-ef7"/>
+                        <outlet property="fullAddressLabel" destination="Uwh-bZ-Ujg" id="C7t-qn-5Oz"/>
+                        <outlet property="hourLabel" destination="xkC-kZ-4DV" id="NO4-BZ-Ukn"/>
+                        <outlet property="isPMRLabel" destination="8mm-zM-kit" id="zIY-91-iZi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vF-Fa-PRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

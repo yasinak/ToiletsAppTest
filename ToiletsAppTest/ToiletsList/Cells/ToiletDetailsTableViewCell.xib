@@ -28,7 +28,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfQ-Wd-yNr">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PMR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfQ-Wd-yNr">
                         <rect key="frame" x="8" y="61" width="26" height="15"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
@@ -58,7 +58,7 @@
                 <outlet property="distanceLabel" destination="bLa-Em-NAT" id="YGl-12-Vhx"/>
                 <outlet property="fullAddressLabel" destination="unI-k3-OcO" id="DXr-kk-Aku"/>
                 <outlet property="hourLabel" destination="2Ly-1O-U58" id="bGj-xw-Ak5"/>
-                <outlet property="isPRMLabel" destination="OfQ-Wd-yNr" id="xIK-xX-h7T"/>
+                <outlet property="isPMRLabel" destination="OfQ-Wd-yNr" id="oGM-zr-dEm"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="99.441964285714278"/>
         </tableViewCell>

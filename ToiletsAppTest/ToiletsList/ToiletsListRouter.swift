@@ -9,7 +9,7 @@
 import UIKit
 
 @objc protocol ToiletsListRoutingLogic {
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
+    func routeToToiletDetails(index: Int)
 }
 
 protocol ToiletsListDataPassing {
@@ -19,35 +19,36 @@ protocol ToiletsListDataPassing {
 class ToiletsListRouter: NSObject, ToiletsListRoutingLogic, ToiletsListDataPassing {
     weak var viewController: ToiletsListViewController?
     var dataStore: ToiletsListDataStore?
-
+    
     // MARK: Routing
-
-    //func routeToSomewhere(segue: UIStoryboardSegue?)
-    //{
-    //  if let segue = segue {
-    //    let destinationVC = segue.destination as! SomewhereViewController
-    //    var destinationDS = destinationVC.router!.dataStore!
-    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //  } else {
-    //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-    //    var destinationDS = destinationVC.router!.dataStore!
-    //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-    //  }
-    //}
+    
+    func routeToToiletDetails(index: Int) {
+        let storyboard = UIStoryboard(name: "ToiletDetails", bundle: nil)
+        
+        if let destinationVC = storyboard.instantiateInitialViewController() as? ToiletDetailsViewController {
+            
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToToiletDetails(source: dataStore!, destination: &destinationDS, index: index)
+            navigateToToiletDetails(source: viewController!, destination: destinationVC)
+        }
+    }
 
     // MARK: Navigation
-
-    //func navigateToSomewhere(source: ToiletsListViewController, destination: SomewhereViewController)
-    //{
-    //  source.show(destination, sender: nil)
-    //}
-
+    
+    func navigateToToiletDetails(source: ToiletsListViewController, destination: ToiletDetailsViewController) {
+        source.show(destination, sender: nil)
+    }
+    
     // MARK: Passing data
-
-    //func passDataToSomewhere(source: ToiletsListDataStore, destination: inout SomewhereDataStore)
-    //{
-    //  destination.name = source.name
-    //}
+    
+    func passDataToToiletDetails(source: ToiletsListDataStore, destination: inout ToiletDetailsDataStore, index: Int) {
+        destination.address = source.fetchedResult?.toiletDetails[index].address
+        destination.district = source.fetchedResult?.toiletDetails[index].district
+        destination.onlyPMR = source.fetchedResult?.toiletDetails[index].onlyPMR
+        destination.openingHour = source.fetchedResult?.toiletDetails[index].openingHour
+        destination.toiletLatitude = source.fetchedResult?.toiletDetails[index].latitude
+        destination.toiletLongitude = source.fetchedResult?.toiletDetails[index].longitude
+        destination.userLatitude = source.userLatitude
+        destination.userLongitude = source.userLongitude
+    }
 }

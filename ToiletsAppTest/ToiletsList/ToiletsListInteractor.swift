@@ -13,18 +13,23 @@ protocol ToiletsListBusinessLogic {
 }
 
 protocol ToiletsListDataStore {
-//    var toiletsListCodable: ToiletsListCodable? { get set }
+    var fetchedResult: ToiletsList.Response? { get set }
+    var userLatitude: Double? { get set }
+    var userLongitude: Double? { get set }
 }
 
 class ToiletsListInteractor: ToiletsListBusinessLogic, ToiletsListDataStore {
-    
+    var userLatitude: Double?
+    var userLongitude: Double?
+    var fetchedResult: ToiletsList.Response?
     var presenter: ToiletsListPresentationLogic?
     var worker: ToiletsListWorker = ToiletsListWorker()
-    var toiletsListCodable: ToiletsListCodable?
 
     // MARK: Do something
 
     func fetchToiletsList(request: ToiletsList.Request) {
+        self.userLatitude = request.userLatitude
+        self.userLongitude = request.userLongitude
         worker.fetchToiletsList(startIndex: request.index) { [weak self] result in
             switch result {
             case .success(let toiletsListCodable):
@@ -40,6 +45,7 @@ class ToiletsListInteractor: ToiletsListBusinessLogic, ToiletsListDataStore {
                 let response = ToiletsList.Response(toiletDetails: toiletDetails ?? [],
                                                     userLatitude: request.userLatitude,
                                                     userLongitude: request.userLongitude)
+                self?.fetchedResult = response
                 self?.presenter?.presentToiletsList(response: response)
                 
             case .failure(_):

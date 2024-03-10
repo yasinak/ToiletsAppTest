@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5006A5922B9B6243007501B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5912B9B6243007501B3 /* AppDelegate.swift */; };
 		5006A5942B9B6243007501B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5932B9B6243007501B3 /* SceneDelegate.swift */; };
-		5006A5992B9B6244007501B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A5972B9B6244007501B3 /* Main.storyboard */; };
 		5006A59B2B9B6250007501B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5006A59A2B9B6250007501B3 /* Assets.xcassets */; };
 		5006A59E2B9B6250007501B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A59C2B9B6250007501B3 /* LaunchScreen.storyboard */; };
 		5006A5A92B9B6251007501B3 /* ToiletsAppTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5A82B9B6251007501B3 /* ToiletsAppTestTests.swift */; };
@@ -34,6 +33,13 @@
 		5006A62B2B9DF924007501B3 /* ToiletsListWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A6292B9DF924007501B3 /* ToiletsListWorkerTests.swift */; };
 		5006A6362B9DFBE6007501B3 /* ToiletsListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A6352B9DFBE6007501B3 /* ToiletsListPresenterTests.swift */; };
 		5006A63B2B9E048D007501B3 /* ToiletsListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A63A2B9E048D007501B3 /* ToiletsListInteractorTests.swift */; };
+		5006A65C2B9E41B7007501B3 /* ToiletDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A6562B9E41B7007501B3 /* ToiletDetailsPresenter.swift */; };
+		5006A65E2B9E41B7007501B3 /* ToiletDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A6582B9E41B7007501B3 /* ToiletDetailsRouter.swift */; };
+		5006A65F2B9E41B7007501B3 /* ToiletDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A6592B9E41B7007501B3 /* ToiletDetailsModels.swift */; };
+		5006A6602B9E41B7007501B3 /* ToiletDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A65A2B9E41B7007501B3 /* ToiletDetailsViewController.swift */; };
+		5006A6612B9E41B7007501B3 /* ToiletDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A65B2B9E41B7007501B3 /* ToiletDetailsInteractor.swift */; };
+		5006A6692B9E4303007501B3 /* ToiletDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A6682B9E4303007501B3 /* ToiletDetails.storyboard */; };
+		5006A6712B9E6127007501B3 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A6702B9E6127007501B3 /* Tools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +63,6 @@
 		5006A58E2B9B6243007501B3 /* ToiletsAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToiletsAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5006A5912B9B6243007501B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5006A5932B9B6243007501B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5006A5982B9B6244007501B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5006A59A2B9B6250007501B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5006A59D2B9B6250007501B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5006A59F2B9B6250007501B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +92,13 @@
 		5006A6292B9DF924007501B3 /* ToiletsListWorkerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToiletsListWorkerTests.swift; sourceTree = "<group>"; };
 		5006A6352B9DFBE6007501B3 /* ToiletsListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListPresenterTests.swift; sourceTree = "<group>"; };
 		5006A63A2B9E048D007501B3 /* ToiletsListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletsListInteractorTests.swift; sourceTree = "<group>"; };
+		5006A6562B9E41B7007501B3 /* ToiletDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsPresenter.swift; sourceTree = "<group>"; };
+		5006A6582B9E41B7007501B3 /* ToiletDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsRouter.swift; sourceTree = "<group>"; };
+		5006A6592B9E41B7007501B3 /* ToiletDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsModels.swift; sourceTree = "<group>"; };
+		5006A65A2B9E41B7007501B3 /* ToiletDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsViewController.swift; sourceTree = "<group>"; };
+		5006A65B2B9E41B7007501B3 /* ToiletDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsInteractor.swift; sourceTree = "<group>"; };
+		5006A6682B9E4303007501B3 /* ToiletDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToiletDetails.storyboard; sourceTree = "<group>"; };
+		5006A6702B9E6127007501B3 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +152,9 @@
 				5006A5EA2B9B6F8E007501B3 /* Utils */,
 				5006A5E82B9B6B94007501B3 /* Models */,
 				5006A5C72B9B6649007501B3 /* ToiletsList */,
+				5006A6512B9E4157007501B3 /* ToiletDetails */,
 				5006A5912B9B6243007501B3 /* AppDelegate.swift */,
 				5006A5932B9B6243007501B3 /* SceneDelegate.swift */,
-				5006A5972B9B6244007501B3 /* Main.storyboard */,
 				5006A59A2B9B6250007501B3 /* Assets.xcassets */,
 				5006A59C2B9B6250007501B3 /* LaunchScreen.storyboard */,
 				5006A59F2B9B6250007501B3 /* Info.plist */,
@@ -221,8 +233,22 @@
 			isa = PBXGroup;
 			children = (
 				5006A5EB2B9B6F8E007501B3 /* URLs.swift */,
+				5006A6702B9E6127007501B3 /* Tools.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5006A6512B9E4157007501B3 /* ToiletDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5006A6562B9E41B7007501B3 /* ToiletDetailsPresenter.swift */,
+				5006A6582B9E41B7007501B3 /* ToiletDetailsRouter.swift */,
+				5006A6592B9E41B7007501B3 /* ToiletDetailsModels.swift */,
+				5006A65A2B9E41B7007501B3 /* ToiletDetailsViewController.swift */,
+				5006A65B2B9E41B7007501B3 /* ToiletDetailsInteractor.swift */,
+				5006A6682B9E4303007501B3 /* ToiletDetails.storyboard */,
+			);
+			path = ToiletDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,8 +356,8 @@
 			files = (
 				5006A59E2B9B6250007501B3 /* LaunchScreen.storyboard in Resources */,
 				5006A5DB2B9B6689007501B3 /* ToiletsList.storyboard in Resources */,
+				5006A6692B9E4303007501B3 /* ToiletDetails.storyboard in Resources */,
 				5006A59B2B9B6250007501B3 /* Assets.xcassets in Resources */,
-				5006A5992B9B6244007501B3 /* Main.storyboard in Resources */,
 				5006A5E32B9B6A38007501B3 /* ToiletDetailsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,10 +387,14 @@
 				5006A5F92B9B72DC007501B3 /* Fields.swift in Sources */,
 				5006A5F62B9B72DC007501B3 /* Geometry.swift in Sources */,
 				5006A5D22B9B6676007501B3 /* ToiletsListViewController.swift in Sources */,
+				5006A65E2B9E41B7007501B3 /* ToiletDetailsRouter.swift in Sources */,
+				5006A6612B9E41B7007501B3 /* ToiletDetailsInteractor.swift in Sources */,
 				5006A5FB2B9B72DC007501B3 /* Records.swift in Sources */,
 				5006A5E22B9B6A38007501B3 /* ToiletDetailsTableViewCell.swift in Sources */,
+				5006A6712B9E6127007501B3 /* Tools.swift in Sources */,
 				5006A5EC2B9B6F8E007501B3 /* URLs.swift in Sources */,
 				5006A5D12B9B6676007501B3 /* ToiletsListModels.swift in Sources */,
+				5006A65C2B9E41B7007501B3 /* ToiletDetailsPresenter.swift in Sources */,
 				5006A5CF2B9B6676007501B3 /* ToiletsListWorker.swift in Sources */,
 				5006A5F72B9B72DC007501B3 /* ToiletsListCodable.swift in Sources */,
 				5006A5CE2B9B6676007501B3 /* ToiletsListPresenter.swift in Sources */,
@@ -373,7 +403,9 @@
 				5006A5922B9B6243007501B3 /* AppDelegate.swift in Sources */,
 				5006A5D32B9B6676007501B3 /* ToiletsListInteractor.swift in Sources */,
 				5006A5942B9B6243007501B3 /* SceneDelegate.swift in Sources */,
+				5006A6602B9E41B7007501B3 /* ToiletDetailsViewController.swift in Sources */,
 				5006A5FA2B9B72DC007501B3 /* Parameters.swift in Sources */,
+				5006A65F2B9E41B7007501B3 /* ToiletDetailsModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,14 +444,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5006A5972B9B6244007501B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5006A5982B9B6244007501B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5006A59C2B9B6250007501B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -152,7 +152,7 @@ extension ToiletsListViewController: UITableViewDataSource {
                 cell.accessibilityIdentifier = "toiletDetailsTableViewCell_\(indexPath.row)"
                 cell.setupCell(fullAddress: toiletDetails.fullAddress,
                                hour: toiletDetails.openingHour,
-                               isPRM: toiletDetails.isPMR,
+                               isPMR: toiletDetails.isPMR,
                                distance: toiletDetails.distance)
             }
             return cell
@@ -176,6 +176,7 @@ extension ToiletsListViewController: UITableViewDataSource {
 extension ToiletsListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        router?.routeToToiletDetails(index: indexPath.row)
     }
 }
 

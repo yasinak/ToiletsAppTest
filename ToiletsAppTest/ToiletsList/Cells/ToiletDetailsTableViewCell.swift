@@ -11,7 +11,7 @@ class ToiletDetailsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var fullAddressLabel : UILabel!
     @IBOutlet weak var hourLabel : UILabel!
-    @IBOutlet weak var isPRMLabel : UILabel!
+    @IBOutlet weak var isPMRLabel : UILabel!
     @IBOutlet weak var distanceLabel : UILabel!
     
     override func awakeFromNib() {
@@ -25,10 +25,10 @@ class ToiletDetailsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupCell(fullAddress: String, hour: String, isPRM: String, distance: String) {
+    func setupCell(fullAddress: String, hour: String, isPMR: String, distance: String) {
         fullAddressLabel.text = fullAddress
         hourLabel.text = hour
-        isPRMLabel.text = isPRM
+        isPMRLabel.text = isPMR
         distanceLabel.text = distance
     }
     
