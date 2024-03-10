@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5006A5922B9B6243007501B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5912B9B6243007501B3 /* AppDelegate.swift */; };
 		5006A5942B9B6243007501B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5932B9B6243007501B3 /* SceneDelegate.swift */; };
-		5006A5962B9B6244007501B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A5952B9B6244007501B3 /* ViewController.swift */; };
 		5006A5992B9B6244007501B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A5972B9B6244007501B3 /* Main.storyboard */; };
 		5006A59B2B9B6250007501B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5006A59A2B9B6250007501B3 /* Assets.xcassets */; };
 		5006A59E2B9B6250007501B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A59C2B9B6250007501B3 /* LaunchScreen.storyboard */; };
@@ -58,7 +57,6 @@
 		5006A58E2B9B6243007501B3 /* ToiletsAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToiletsAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5006A5912B9B6243007501B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5006A5932B9B6243007501B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5006A5952B9B6244007501B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5006A5982B9B6244007501B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5006A59A2B9B6250007501B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5006A59D2B9B6250007501B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,7 +142,6 @@
 				5006A5C72B9B6649007501B3 /* ToiletsList */,
 				5006A5912B9B6243007501B3 /* AppDelegate.swift */,
 				5006A5932B9B6243007501B3 /* SceneDelegate.swift */,
-				5006A5952B9B6244007501B3 /* ViewController.swift */,
 				5006A5972B9B6244007501B3 /* Main.storyboard */,
 				5006A59A2B9B6250007501B3 /* Assets.xcassets */,
 				5006A59C2B9B6250007501B3 /* LaunchScreen.storyboard */,
@@ -362,7 +359,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5006A5F92B9B72DC007501B3 /* Fields.swift in Sources */,
-				5006A5962B9B6244007501B3 /* ViewController.swift in Sources */,
 				5006A5F62B9B72DC007501B3 /* Geometry.swift in Sources */,
 				5006A5D22B9B6676007501B3 /* ToiletsListViewController.swift in Sources */,
 				5006A5FB2B9B72DC007501B3 /* Records.swift in Sources */,
