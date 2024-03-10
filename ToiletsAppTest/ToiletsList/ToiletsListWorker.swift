@@ -19,13 +19,20 @@ class ToiletsListWorker {
         }
         //  launch the request
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-            do {
-                let toiletsList = try JSONDecoder().decode(ToiletsListCodable.self, from: data!)
-                completion(.success(toiletsList))
-            } catch {
+            if let data = data {
+                do {
+                    let toiletsList = try JSONDecoder().decode(ToiletsListCodable.self, from: data!)
+                    completion(.success(toiletsList))
+                } catch {
+                    completion(.failure(error))
+                }
+            }
+            //  Error management
+            //  in fact, it will be goog to have a different behavior depending on the error
+            if let error = error {
                 completion(.failure(error))
             }
         }.resume()
     }
-
+    
 }

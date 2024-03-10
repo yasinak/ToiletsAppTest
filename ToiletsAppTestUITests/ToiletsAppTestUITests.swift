@@ -22,13 +22,21 @@ class ToiletsAppTestUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testToiletsListScreen() throws {
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //  manage system localisation popup
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+        let allowBtn = springboard.buttons["Allow Once"]
+        if allowBtn.exists {
+            allowBtn.tap()
+        }
+        
+        let myTable = app.tables.matching(identifier: "toiletsListTableViewIdentifier")
+        let cell = myTable.cells.element(matching: .cell, identifier: "toiletDetailsTableViewCell_0")
+        cell.tap()
+        
     }
 
     func testLaunchPerformance() throws {

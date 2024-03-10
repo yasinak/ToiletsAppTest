@@ -67,6 +67,7 @@ class ToiletsListViewController: UIViewController, ToiletsListDisplayLogic {
     
     // MARK: Configuration
     private func viewConfiguration() {
+        toiletsListTableView.accessibilityIdentifier = "toiletsListTableViewIdentifier"
         toiletsListTableView.register(UINib(nibName: "ToiletDetailsTableViewCell", bundle: nil), forCellReuseIdentifier: "ToiletDetailsTableViewCell")
     }
     
@@ -148,6 +149,7 @@ extension ToiletsListViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ToiletDetailsTableViewCell") as? ToiletDetailsTableViewCell {
             
             if let toiletDetails = self.viewModels?[indexPath.row] {
+                cell.accessibilityIdentifier = "toiletDetailsTableViewCell_\(indexPath.row)"
                 cell.setupCell(fullAddress: toiletDetails.fullAddress,
                                hour: toiletDetails.openingHour,
                                isPRM: toiletDetails.isPMR,
