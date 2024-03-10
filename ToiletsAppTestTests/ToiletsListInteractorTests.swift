@@ -46,7 +46,7 @@ class ToiletsListInteractorTests: XCTestCase {
         override func fetchToiletsList(startIndex: Int, completion: @escaping (Result<ToiletsListCodable, Error>) -> Void) {
             presentToiletsListCalled = true
             
-            if startIndex > 0 {
+            if startIndex >= 0 {
                 let toiletsList = ToiletsListCodable(nhits: 0,
                                                      parameters: nil,
                                                      records: [])
