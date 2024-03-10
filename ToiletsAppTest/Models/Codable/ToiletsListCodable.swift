@@ -18,18 +18,14 @@ struct ToiletsListCodable : Codable {
 	let parameters : Parameters?
 	let records : [Records]?
 
-	enum CodingKeys: String, CodingKey {
-
-		case nhits = "nhits"
-		case parameters = "parameters"
-		case records = "records"
-	}
-
-	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		nhits = try values.decodeIfPresent(Int.self, forKey: .nhits)
-		parameters = try values.decodeIfPresent(Parameters.self, forKey: .parameters)
-		records = try values.decodeIfPresent([Records].self, forKey: .records)
-	}
+    //  I add this function to allow dependency injection for the test
+    init(nhits: Int?,
+         parameters: Parameters?,
+         records: [Records]?
+         ) {
+        self.nhits = nhits
+        self.parameters = parameters
+        self.records = records
+    }
 
 }
