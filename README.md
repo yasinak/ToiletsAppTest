@@ -38,15 +38,19 @@ I'm at 79.3% code coverage.
 
 I set up unit tests for interactions, presenters and workers.
 
-And I set up a UI Test for a very short flow of the application by going from Home to a details screen
+And I set up a UI Test for a very short flow of the application by going from Home to a details screen.
 
 
 ## If I had more time
 
 I would have added some behaviors to the application to manage all error cases.
 
-And I would also have set up a loading animation to indicate to the user that the application is loading.
+And I would also have set up a activity indicator to indicate to the user that the application is loading/fetching data.
 
 As well as a screen to give the reason why the application requests the user's geolocation (in particular to follow Apple guidelines).
+
+A map to display all toilets.
+
+Accessibility of data in offline mode.
 
 Finally I would have implemented a system to add additional results at the bottom of the tableView, as the user scrolls down...
