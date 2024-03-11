@@ -15,6 +15,7 @@ After download this project. You don't need to install something else.
 ## How to Use
 
 To open the project, double click to ToiletsAppTest.xcodeproj file, Xcode will be launch. 
+
 After you can run the project and test it on a simulator.
 
 
@@ -34,13 +35,18 @@ Given the needs of the application, I chose to go with a TableView for Home and 
 ## Tests
 
 I'm at 79.3% code coverage.
+
 I set up unit tests for interactions, presenters and workers.
+
 And I set up a UI Test for a very short flow of the application by going from Home to a details screen
 
 
 ## If I had more time
 
 I would have added some behaviors to the application to manage all error cases.
+
 And I would also have set up a loading animation to indicate to the user that the application is loading.
+
 As well as a screen to give the reason why the application requests the user's geolocation (in particular to follow Apple guidelines).
+
 Finally I would have implemented a system to add additional results at the bottom of the tableView, as the user scrolls down...
