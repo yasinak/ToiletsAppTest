@@ -40,6 +40,8 @@
 		5006A6612B9E41B7007501B3 /* ToiletDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A65B2B9E41B7007501B3 /* ToiletDetailsInteractor.swift */; };
 		5006A6692B9E4303007501B3 /* ToiletDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5006A6682B9E4303007501B3 /* ToiletDetails.storyboard */; };
 		5006A6712B9E6127007501B3 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006A6702B9E6127007501B3 /* Tools.swift */; };
+		50DCD9772B9F05E1009511D5 /* ToiletDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCD9762B9F05E1009511D5 /* ToiletDetailsPresenterTests.swift */; };
+		50DCD97F2B9F08FC009511D5 /* ToiletDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DCD97E2B9F08FC009511D5 /* ToiletDetailsInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		5006A65B2B9E41B7007501B3 /* ToiletDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsInteractor.swift; sourceTree = "<group>"; };
 		5006A6682B9E4303007501B3 /* ToiletDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToiletDetails.storyboard; sourceTree = "<group>"; };
 		5006A6702B9E6127007501B3 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		50DCD9762B9F05E1009511D5 /* ToiletDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		50DCD97E2B9F08FC009511D5 /* ToiletDetailsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDetailsInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,11 +169,8 @@
 		5006A5A72B9B6251007501B3 /* ToiletsAppTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				5006A63A2B9E048D007501B3 /* ToiletsListInteractorTests.swift */,
-				5006A6352B9DFBE6007501B3 /* ToiletsListPresenterTests.swift */,
-				5006A6292B9DF924007501B3 /* ToiletsListWorkerTests.swift */,
-				5006A5A82B9B6251007501B3 /* ToiletsAppTestTests.swift */,
-				5006A6282B9DF924007501B3 /* ToiletsList.json */,
+				50DCD9752B9F05A7009511D5 /* ToiletDetails */,
+				50DCD96E2B9F0406009511D5 /* ToiletList */,
 				5006A5AA2B9B6251007501B3 /* Info.plist */,
 			);
 			path = ToiletsAppTestTests;
@@ -247,6 +248,27 @@
 				5006A65A2B9E41B7007501B3 /* ToiletDetailsViewController.swift */,
 				5006A65B2B9E41B7007501B3 /* ToiletDetailsInteractor.swift */,
 				5006A6682B9E4303007501B3 /* ToiletDetails.storyboard */,
+			);
+			path = ToiletDetails;
+			sourceTree = "<group>";
+		};
+		50DCD96E2B9F0406009511D5 /* ToiletList */ = {
+			isa = PBXGroup;
+			children = (
+				5006A63A2B9E048D007501B3 /* ToiletsListInteractorTests.swift */,
+				5006A6352B9DFBE6007501B3 /* ToiletsListPresenterTests.swift */,
+				5006A6292B9DF924007501B3 /* ToiletsListWorkerTests.swift */,
+				5006A5A82B9B6251007501B3 /* ToiletsAppTestTests.swift */,
+				5006A6282B9DF924007501B3 /* ToiletsList.json */,
+			);
+			path = ToiletList;
+			sourceTree = "<group>";
+		};
+		50DCD9752B9F05A7009511D5 /* ToiletDetails */ = {
+			isa = PBXGroup;
+			children = (
+				50DCD9762B9F05E1009511D5 /* ToiletDetailsPresenterTests.swift */,
+				50DCD97E2B9F08FC009511D5 /* ToiletDetailsInteractorTests.swift */,
 			);
 			path = ToiletDetails;
 			sourceTree = "<group>";
@@ -414,6 +436,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5006A62B2B9DF924007501B3 /* ToiletsListWorkerTests.swift in Sources */,
+				50DCD9772B9F05E1009511D5 /* ToiletDetailsPresenterTests.swift in Sources */,
+				50DCD97F2B9F08FC009511D5 /* ToiletDetailsInteractorTests.swift in Sources */,
 				5006A5A92B9B6251007501B3 /* ToiletsAppTestTests.swift in Sources */,
 				5006A63B2B9E048D007501B3 /* ToiletsListInteractorTests.swift in Sources */,
 				5006A6362B9DFBE6007501B3 /* ToiletsListPresenterTests.swift in Sources */,

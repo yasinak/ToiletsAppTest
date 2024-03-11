@@ -28,15 +28,18 @@ class ToiletsAppTestUITests: XCTestCase {
 
         //  manage system localisation popup
         let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
-        let allowBtn = springboard.buttons["Allow Once"]
-        if allowBtn.exists {
-            allowBtn.tap()
+        let allowButton = springboard.buttons["Allow Once"]
+        if allowButton.exists {
+            allowButton.tap()
         }
         
+        //  Tap on a cell to go to the details screen
         let myTable = app.tables.matching(identifier: "toiletsListTableViewIdentifier")
         let cell = myTable.cells.element(matching: .cell, identifier: "toiletDetailsTableViewCell_0")
         cell.tap()
         
+        //  Tap on the back button of the navigaion bar
+        app.navigationBars.buttons.element(boundBy: 0).tap()
     }
 
     func testLaunchPerformance() throws {
