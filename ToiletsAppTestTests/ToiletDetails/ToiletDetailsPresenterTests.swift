@@ -35,7 +35,7 @@ class ToiletDetailsPresenterTests: XCTestCase {
         }
     }
     
-    func testPresentProductDetails() {
+    func testPresentToiletDetails() {
         let viewController = ToiletDetailsDisplayLogicSpy()
         sut.viewController = viewController
         let response = ToiletDetails.Response(address: "",

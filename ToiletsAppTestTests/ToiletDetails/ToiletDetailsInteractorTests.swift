@@ -36,7 +36,7 @@ class ToiletDetailsInteractorTests: XCTestCase {
         }   
     }
 
-    func testFetchProductDetails() {
+    func testFetchToiletDetails() {
         let presenter = ToiletDetailsPresentationLogicSpy()
         presenter.expectPresentToiletList = XCTestExpectation(description: "expect present Toilet Details")
         
